@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.azzonaazul.modulofiscal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AzZonaAzulModuloFiscal"
+        android:requestLegacyExternalStorage="true"
+        >
+
+        <activity
+            android:name=".CameraPreviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AzZonaAzulModuloFiscal.NoActionBar" />
+        <activity
+            android:name=".RegistrarIrregularidadeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AzZonaAzulModuloFiscal.NoActionBar" />
+
+        <activity
+            android:name=".VerficarVeiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AzZonaAzulModuloFiscal.NoActionBar" />
+        <activity
+            android:name=".TelaInicialActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AzZonaAzulModuloFiscal.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity
+            ></application>
+
+
+</manifest>
